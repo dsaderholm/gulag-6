@@ -19,9 +19,6 @@ var app = express();
 
 var unblockerConfig = {
     prefix: '/wirkus/',
-    responseMiddleware: [
-        googleAnalyticsMiddleware
-    ]
 };
 
 
