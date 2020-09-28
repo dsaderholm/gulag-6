@@ -17,12 +17,20 @@ var Transform = require('stream').Transform;
 
 var app = express();
 
+var unblockerConfig = {
+    prefix: '/wirkus/',
+    responseMiddleware: [
+        googleAnalyticsMiddleware
+    ]
+};
+
+
 
 // this line must appear before any express.static calls (or anything else that sends responses)
 app.use(unblocker(unblockerConfig));
 
 // serve up static files *after* the proxy is run
-app.use('/', express.static(__dirname + '/wirkus'));
+app.use('/', express.static(__dirname + '/public'));
 
 // this is for users who's form actually submitted due to JS being disabled or whatever
 app.get("/no-js", function(req, res) {
