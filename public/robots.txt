@@ -1,7 +1,7 @@
 User-agent: *
-Disallow: /proxy/http
-Disallow: /proxy/http:
-Disallow: /proxy/http:/
-Disallow: /proxy/https
-Disallow: /proxy/https:
-Disallow: /proxy/https:/
+Disallow: /wirkus/http
+Disallow: /wirkus/http:
+Disallow: /wirkus/http:/
+Disallow: /wirkus/https
+Disallow: /wirkus/https:
+Disallow: /wirkus/https:/
