@@ -18,7 +18,7 @@ var Transform = require('stream').Transform;
 var app = express();
 
 var unblockerConfig = {
-    prefix: '/wirkus/',
+    prefix: '/main/',
 };
 
 
